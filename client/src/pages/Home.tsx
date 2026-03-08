@@ -1,4 +1,5 @@
 import { CheckCircle, Users, BookOpen, Heart, Utensils, Shield, ArrowRight, Phone, Mail } from "lucide-react";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 /**
  * Design Philosophy: Warm Minimalism with Playful Accents
@@ -54,9 +55,22 @@ export default function Home() {
 
   return (
     <div className="bg-background">
-      {/* Hero Section */}
+      {/* Hero Section with Animated Gradient Background */}
       <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32">
-        <div className="container">
+        <BackgroundGradientAnimation
+          gradientBackgroundStart="rgb(123, 169, 158)"
+          gradientBackgroundEnd="rgb(244, 168, 154)"
+          firstColor="123, 169, 158"
+          secondColor="244, 168, 154"
+          thirdColor="212, 165, 116"
+          fourthColor="107, 154, 143"
+          fifthColor="91, 139, 128"
+          pointerColor="123, 169, 158"
+          interactive={true}
+          containerClassName="absolute inset-0 h-full w-full"
+          className="absolute inset-0 z-0"
+        />
+        <div className="container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="fade-in order-2 md:order-1">
