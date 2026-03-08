@@ -43,18 +43,16 @@ export default function Header() {
       {/* Main Navigation */}
       <nav className="container py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/">
-          <a className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">MCK</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
-                Mummy Cool
-              </h1>
-              <p className="text-xs text-muted-foreground">Kindergarten</p>
-            </div>
-          </a>
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-lg">MCK</span>
+          </div>
+          <div className="hidden sm:block">
+            <h1 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
+              Mummy Cool
+            </h1>
+            <p className="text-xs text-muted-foreground">Kindergarten</p>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
